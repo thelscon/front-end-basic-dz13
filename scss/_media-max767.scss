@@ -1,0 +1,144 @@
+@media (max-width: 767px) {
+    .logo {
+        font-size: 66px;
+    }
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 29px;
+    }
+    .navigation__nav__ul {
+        margin-top: 18px;
+    }
+    .navigation__nav__ul__li__a {
+        font-size: 14px;
+        line-height: 27px;
+        padding: 7px 12px;
+    }
+    .banner {
+        position: static;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 67px;
+        padding-bottom: 29px;
+        min-height: 0;
+    }
+    .banner__section {
+        max-width: 100%;
+    } 
+    .banner__section__h2 {
+        text-align: center;
+        font-size: 45px;
+    }
+    .banner__section__p {
+        margin: 29px 0;
+        text-align: center;
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .request__section {
+        position: static;
+        max-width: 300px;
+        padding: 0 17px 21px 18px;
+    }    
+    .request__section__h4 {
+        margin-top: 25px;
+        font-size: 17px;
+    }
+    .request__section__form {
+        margin-top: 28px;
+    }
+    .request__section__form__input {
+        height: 43px;
+        padding-left: 14px;
+        font-size: 15px;
+        line-height: 19px;
+
+        &::placeholder {
+            font-size: 15px;
+            line-height: 19px;
+        }
+    }
+    .request__section__form__box_checkbox {
+        margin-top: 20px;
+    }
+    .request__section__form__box_checkbox__container {
+        width: 14px;
+        height: 14px;
+    }
+    .f_checkbox {
+        line-height: 14px;
+    }
+    .request__section__form__checkbox__label {
+        margin-left: 17px;
+        font-size: 15px;
+    
+    }
+    .request__section__form__submit {
+        margin-top: 15px;
+        height: 43px;
+        font-size: 17px;
+    }
+    .services__h2 {
+        font-size: 38px;
+        line-height: 60px;
+    }
+    .services__cards {
+        justify-content: space-around;
+    }
+    .services__cards__card {
+        margin-bottom: 51px;
+        max-width: 126px;
+    }
+    .services__cards__card__image {
+        height: 116px;
+    }
+    .services__cards__card__p {
+        margin-top: 33px;
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .story__center {
+        margin-top: 23px;
+        margin-bottom: 21px;
+    }
+    .story__center__p {
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .story__center__button {
+        margin-left: 61px;
+        padding: 11px 38px 10px 33px;
+        font-size: 11px;
+        line-height: 14px;
+    }
+    .testimonial_gallery {
+        padding: 57px 10px 60px 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery {
+        padding-top: 57px;
+        margin: 0;
+    }
+    .testimonial__box_person {
+        padding-right: 128px;
+    }
+    .--image_position {
+        right: 0px;
+    }
+    .footer__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 55px 10px 35px 10px;
+    }
+    .footer__h5 {
+        font-size: 15px;
+        line-height: 17px;
+        margin: 0 0 10px 0;
+    }
+    .--logo_footer {
+        font-size: 48px;
+    }
+}

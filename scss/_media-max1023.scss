@@ -1,0 +1,43 @@
+@media (max-width: 1023px) {
+    .banner {
+        padding-top: 100px;
+    }
+    .banner__section {
+        max-width: 46%;
+    } 
+    .banner__section__h2 {
+        font-size: 60px;
+    }
+    .services__h2 {
+        font-size: 38px;
+        line-height: 60px;
+        margin-bottom: 56px;
+    }
+    .story__center__button {
+        margin-left: 91px;
+        padding: 16px 57px 15px 49px;
+        font-size: 17px;
+        line-height: 21px;
+    }
+    .pricing__h3 {
+        margin-top: 38px;
+        font-size: 38px;
+        line-height: 60px;
+    }
+    .prices {
+        justify-content: space-evenly;
+        top: 121px;
+    }
+    .testimonial_gallery {
+        padding: 85px 10px 89px 10px;
+    }
+    .testimonial__h3 {
+        font-size: 38px;
+        line-height: 60px;
+        margin-bottom: 14px;
+    }
+    .gallery__h3 {
+        font-size: 38px;
+        line-height: 60px;
+    }
+}

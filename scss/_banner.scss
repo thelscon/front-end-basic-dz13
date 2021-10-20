@@ -1,0 +1,202 @@
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 595px;
+    max-width: 1025px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 10px;
+    padding-top: 133px;
+}
+
+.banner__section {
+    max-width: 493px;
+}
+
+.banner__section__h2 {
+    color: #d03958;
+    font-family: 'Montserrat';
+    font-size: 90px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -1.8px;
+
+    .--color_back {
+        color: #161616;
+    }
+}
+
+.banner__section__p {
+    margin: 38px 0;
+    color: #161616;
+    font-family: "PT Serif";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+}
+
+.request__section {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    right: 10px;
+    padding: 0 23px 28px 24px;
+    width: 400px;
+    background-color: #d03958;
+    border-radius: 5px;
+}
+
+.request__section__h4 {
+    text-align: center;
+    margin-top: 33px;
+    width: 100%;
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.44px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.request__section__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 37px;
+    width: 100%;
+}
+
+.request__section__form__input {
+    height: 57px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    padding-left: 19px;
+    font-family: "PT Serif";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: -0.4px;
+
+    &::placeholder {                        
+        color: #b5b5b5;
+        font-family: "PT Serif";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: -0.4px;
+    }
+    &:focus {
+        outline: none;
+        box-shadow: 2px -2px #ffffff, 2px 2px #ffffff, -2px -2px #ffffff, -2px 2px #ffffff;
+    }
+    &:hover {
+        box-shadow: 2px -2px #ffffff, 2px 2px #ffffff, -2px -2px #ffffff, -2px 2px #ffffff;
+    }
+}
+
+.request__section__form__box_checkbox {
+    display: flex;
+    margin-top: 26px;
+
+    &:focus-within .f_checkbox{
+        outline: none;
+        box-shadow: 2px -2px #ffffff, 2px 2px #ffffff, -2px -2px #ffffff, -2px 2px #ffffff;
+    }    
+    &:hover .f_checkbox{
+        box-shadow: 2px -2px #ffffff, 2px 2px #ffffff, -2px -2px #ffffff, -2px 2px #ffffff;
+    }
+}
+
+.request__section__form__box_checkbox__container {
+    position: relative;
+    flex-shrink: 0;
+    width: 19px;
+    height: 18px;
+}
+
+.request__section__form__input__checkbox {
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+    &:checked + .f_checkbox {
+        color: #000000;
+    }    
+}
+
+.f_checkbox {
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+    line-height: 18px;
+    background-color: #ffffff;
+    color: transparent;
+    border-radius: 5px;
+}
+
+.request__section__form__checkbox__label {
+    margin-left: 23px;
+    color: #ffffff;
+    font-family: "PT Serif";
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &::selection {
+        background-color: none;
+        color: none;
+    }
+
+}
+
+.request__section__form__submit {
+    margin-top: 20px;
+    height: 57px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #161616;
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.44px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:focus {
+        outline: none;
+        box-shadow: 1px -1px #161616, 1px 1px #161616, -1px -1px #161616, -1px 1px #161616;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.--email_adress {
+    margin-top: 16px;
+}
+
+.--phone_number {
+    margin-top: 17px;
+}
+
+.--country {
+    margin-top: 19px;
+}

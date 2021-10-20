@@ -1,0 +1,133 @@
+@import '_variables.scss';
+
+@font-face {
+    font-family: 'Quite Chocolatey';
+    src: url($path_fonts + 'Quite Chocolatey/QuiteChocolatey.eot');
+    src: url($path_fonts + 'Quite Chocolatey/QuiteChocolatey.eot?#iefix') format('embedded-opentype'),
+        url($path_fonts + 'Quite Chocolatey/QuiteChocolatey.woff2') format('woff2'),
+        url($path_fonts + 'Quite Chocolatey/QuiteChocolatey.woff') format('woff'),
+        url($path_fonts + 'Quite Chocolatey/QuiteChocolatey.ttf') format('truetype'),
+        url($path_fonts + 'Quite Chocolatey/QuiteChocolatey.svg#QuiteChocolatey') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url($path_fonts + 'Montserrat-Regular/Montserrat-Regular.eot');
+    src: url($path_fonts + 'Montserrat-Regular/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url($path_fonts + 'Montserrat-Regular/Montserrat-Regular.woff2') format('woff2'),
+        url($path_fonts + 'Montserrat-Regular/Montserrat-Regular.woff') format('woff'),
+        url($path_fonts + 'Montserrat-Regular/Montserrat-Regular.ttf') format('truetype'),
+        url($path_fonts + 'Montserrat-Regular/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url($path_fonts + 'Montserrat-Bold/Montserrat-Bold.eot');
+    src: url($path_fonts + 'Montserrat-Bold/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+        url($path_fonts + 'Montserrat-Bold/Montserrat-Bold.woff2') format('woff2'),
+        url($path_fonts + 'Montserrat-Bold/Montserrat-Bold.woff') format('woff'),
+        url($path_fonts + 'Montserrat-Bold/Montserrat-Bold.ttf') format('truetype'),
+        url($path_fonts + 'Montserrat-Bold/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Serif';
+    src: url($path_fonts + 'PTSerif-Regular/PTSerif-Regular.eot');
+    src: url($path_fonts + 'PTSerif-Regular/PTSerif-Regular.eot?#iefix') format('embedded-opentype'),
+        url($path_fonts + 'PTSerif-Regular/PTSerif-Regular.woff2') format('woff2'),
+        url($path_fonts + 'PTSerif-Regular/PTSerif-Regular.woff') format('woff'),
+        url($path_fonts + 'PTSerif-Regular/PTSerif-Regular.ttf') format('truetype'),
+        url($path_fonts + 'PTSerif-Regular/PTSerif-Regular.svg#PTSerif-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Couture';
+    src: url($path_fonts + 'Couture-Bold/Couture-Bold.eot');
+    src: url($path_fonts + 'Couture-Bold/Couture-Bold.eot?#iefix') format('embedded-opentype'),
+        url($path_fonts + 'Couture-Bold/Couture-Bold.woff2') format('woff2'),
+        url($path_fonts + 'Couture-Bold/Couture-Bold.woff') format('woff'),
+        url($path_fonts + 'Couture-Bold/Couture-Bold.ttf') format('truetype'),
+        url($path_fonts + 'Couture-Bold/Couture-Bold.svg#Couture-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.logo {
+    color: #d03958;
+    font-family: "Quite Chocolatey";
+    font-size: 88px;
+    font-weight: 400;
+    letter-spacing: -1.2px;
+    text-decoration: none;
+
+    &::selection {
+        background-color: none;
+        color: none;
+    }
+    &:focus {
+        outline: 1px solid #d03958;
+    }
+}
+
+.--logo_header {
+    font-size: 88px;
+}
+
+.--logo_footer {
+    font-size: 64px;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url($path_images + 'header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    min-width: 320px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: #e4d5b8;
+        opacity: 0.80;
+        z-index: -1;
+    }
+}
+@import '_navigation.scss';
+@import '_banner.scss';
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 320px;
+}
+@import '_services.scss';
+@import '_story.scss';
+@import '_pricing.scss';
+@import '_testimonial_gallary.scss';
+@import '_footer.scss';
+
+//responsive
+@import '_media-max1023.scss';
+@import '_media-max767.scss';
+@import '_media-max319.scss';

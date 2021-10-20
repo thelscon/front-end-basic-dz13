@@ -1,0 +1,166 @@
+.testimonial_gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    max-width: 1025px;
+    width: 100%;
+    padding: 113px 10px 119px 10px;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial__h3 {
+    text-align: center;
+    color: #1f1f1f;
+    font-family: 'Montserrat';
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 80px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-bottom: 19px;
+}
+
+.testimonial__box_person {
+    position: relative;
+    max-width: 439px;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 35px;
+    padding-left: 26px;
+    padding-right: 81px;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+    &:hover {
+        background-color: #e3d5b8;
+        outline: none;
+    }
+    &:focus-within {
+        background-color: #e3d5b8;
+        outline: none;
+    }
+}
+
+.testimonial__box_person__p {
+    color: #161616;
+    font-family: "PT Serif";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    margin-top: 22px;
+}
+
+.testimonial__box_person__h4 {
+    margin-top: 15px;
+    margin-bottom: 23px;
+}
+
+.testimonial__box_person__h4__a {
+    text-decoration: none;
+    color: #d03958;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+
+    &:focus {
+        outline: 1px solid #d03958;
+    }
+}
+
+.testimonial__box_person__a {
+    display: flex;
+    outline: none;
+
+    &:focus .person__image {
+        box-shadow: 0 -5px 16px #b8ac93;
+        outline: none;
+    }
+}
+
+.person__image {    
+    box-shadow: 0 -5px 16px rgba(184, 172, 147, 0.75);
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+
+    &:hover {
+        box-shadow: 0 -5px 16px #b8ac93;
+    }
+    &::selection {
+        background-image: none;
+        color: none;
+    }
+}
+
+.--image_position {
+    position: absolute;
+    right: -47px;
+}
+
+.--margin {
+    margin: 14px 17px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 73px;
+}
+
+.gallery__h3 {
+    color: #d03958;
+    font-family: 'Montserrat';
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 80px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.gallary__all_person {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 417px;
+    width: 100%;
+    margin-top: 37px;
+
+    &:focus {
+        outline: 1px solid #b8ac93;;
+    }
+}
+
+.gallery__h4 {
+    margin-top: 28px;
+}
+
+.gallery__h4__a {
+    color: #d03958;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: -0.4px;
+
+    &:focus {
+        outline: 1px solid #d03958;
+    }
+}
